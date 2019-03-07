@@ -5,15 +5,15 @@ var students = [
   { id: 4, name: "alex",     age: 30 }
 ];
 students.sort((a,b) => {
-  var nameA = a.name.toLowerCase();
-  var nameB = b.name.toLowerCase();
+  // var nameA = a.name.toLowerCase();
+  // var nameB = b.name.toLowerCase();
   if (nameA < nameB){
     return -1;
   }
-  if (nameA > nameB){
+  else if (nameA > nameB){
     return 1;
   }
-  if (nameA == nameB){
+  else {
     return b.age - a.age
   }
 })
